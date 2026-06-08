@@ -1,5 +1,7 @@
 // Primitive
 
+const { captureOwnerStack } = require("react");
+
 // 7 types : String, number, boolean, null, undefined, symbol,BigInt
 
 const score = 100
@@ -31,4 +33,29 @@ console.log(typeof myFunction);
 //reference(non primitive)
 
 // Array, Objects, Functions
+
+//-------------------------------------------------------------------------------------------
+// stack(primitive)   Heap(non primitive)
+
+let myYoutubename = "HardikTakkar"
+
+let anothername = HardikT
+anothername = "TakkarHardik"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+
+}
+let userTwo = userOne
+
+userTwo.email="hardik@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
