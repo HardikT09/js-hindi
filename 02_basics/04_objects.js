@@ -67,9 +67,9 @@ const {courseInstructor: instructor } = course //replaced with instructor
 console.log(instructor);
 
 //API (JSON)
-{
-    "name":"Hardik",
-    "coursename":"Js in hindi"
-    "price": "free"
-}
+//{
+//    "name":"Hardik",
+  //  "coursename":"Js in hindi"
+    //"price": "free"
+//}
 
