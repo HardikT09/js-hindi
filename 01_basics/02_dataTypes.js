@@ -5,7 +5,7 @@ let name = "HArdik"
 let age = 18
 let isLoggedIn= false
 
-
-console.log(typeof null);
+let arr=[]
+console.log(typeof arr);
 
 
