@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai or code | DOM</title>
+</head>
+<body style="background-color: #212121; color: #ffffff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    
+</body>
+<script>
+    function addLanguage(LangName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${LangName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+    addLanguage("C++")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Go")
+
+    //edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+</script>
+</html>
