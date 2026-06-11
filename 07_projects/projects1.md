@@ -60,3 +60,17 @@ form.addEventListener('submit', function(event){
     <span>Category: ${category}</span>`;
   }
 });
+
+## Project 3
+
+const clock = document.getElementById('clock')
+//const clock = document.querySelector('#clock')
+
+
+setInterval(function(){    //continously updates
+  let date = new Date()
+  console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+   
